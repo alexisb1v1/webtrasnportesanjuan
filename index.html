@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Transportes San Juan S.R.L. - Líderes en Movilidad y Seguridad</title>
+  <!-- Fuentes Google: Montserrat para títulos y de acción, Inter para cuerpo de texto -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@500;600;700;800&display=swap"
+    rel="stylesheet">
+  <!-- Iconografía FontAwesome para un diseño premium -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="gallery.css" />
+</head>
+
+<body>
+
+  <!-- Header principal -->
+  <header class="header">
+    <div class="logo">
+      <img src="content/LogoSinFondo.png" alt="Logo Transportes San Juan" class="logo-img" />
+      <span class="logo-text">SAN JUAN</span>
+    </div>
+
+    <!-- Menú de Escritorio -->
+    <nav class="menu-desktop">
+      <a href="#inicio">Inicio</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#galeria">Galería</a>
+      <a href="#contacto" class="btn-contact-header">CONTACTO</a>
+    </nav>
+
+    <!-- Botón hamburguesa para Móvil -->
+    <button class="menu-toggle" aria-label="Abrir menú">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+  </header>
+
+  <!-- Menú Drawer para Móviles -->
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+  <aside class="drawer" id="mobileDrawer">
+    <div class="drawer-header">
+      <div class="logo">
+        <img src="content/LogoSinFondo.png" alt="Logo" class="logo-img-drawer" />
+        <span class="logo-text-drawer">SAN JUAN</span>
+      </div>
+      <button class="drawer-close" id="closeDrawer" aria-label="Cerrar menú">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    <nav class="drawer-menu">
+      <a href="#inicio" class="drawer-link"><i class="fa-solid fa-house"></i> Inicio</a>
+      <a href="#nosotros" class="drawer-link"><i class="fa-solid fa-circle-info"></i> Nosotros</a>
+      <a href="#servicios" class="drawer-link"><i class="fa-solid fa-bus"></i> Servicios</a>
+      <a href="#galeria" class="drawer-link"><i class="fa-solid fa-images"></i> Galería</a>
+      <a href="#contacto" class="drawer-link drawer-btn"><i class="fa-solid fa-envelope"></i> Contacto</a>
+    </nav>
+  </aside>
+
+  <!-- Hero Section -->
+  <section id="inicio" class="hero">
+    <div class="hero-container">
+      <div class="hero-text">
+        <span class="hero-badge"><i class="fa-solid fa-award"></i> Líderes en Ucayali</span>
+        <h2>30 Años Moviendo Pucallpa</h2>
+        <p>Comprometidos con la movilidad, la seguridad y la eficiencia del transporte público. Tres décadas conectando
+          familias y facilitando el desarrollo de nuestra región.</p>
+        <div class="hero-buttons">
+          <a href="#servicios" class="btn btn-primary">NUESTROS SERVICIOS</a>
+          <a href="#contacto" class="btn btn-outline">CONTACTO</a>
+        </div>
+      </div>
+      <div class="hero-imgs">
+        <div class="hero-img-wrapper img-1">
+          <img src="content/img1.jpg" alt="Bus Transportes San Juan" />
+        </div>
+        <div class="hero-img-wrapper img-2">
+          <img src="content/img3.jpg" alt="Flota de Transportes San Juan" />
+        </div>
+        <div class="badge-experience">
+          <div class="badge-exp-number">30+</div>
+          <div class="badge-exp-text">Años de<br>Experiencia</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Nosotros Section -->
+  <section id="nosotros" class="nosotros">
+    <div class="nosotros-container">
+      <h3 class="section-title">¿Quiénes <span>Somos?</span></h3>
+
+      <div class="nosotros-main">
+        <div class="nosotros-logo-wrapper">
+          <div class="nosotros-logo-circle">
+            <img src="content/LogoSinFondo.png" alt="Logo Corporativo San Juan" />
+          </div>
+        </div>
+        <div class="nosotros-text-block">
+          <p class="nosotros-desc">
+            Somos una empresa con más de 30 años de trayectoria en el transporte público urbano e interurbano de
+            Pucallpa. Brindamos un servicio seguro, puntual y profundamente comprometido con el bienestar de nuestra
+            comunidad y el crecimiento local.
+          </p>
+          <div class="nosotros-team-img">
+            <img src="content/img5.jpg" alt="Equipo de Transportes San Juan" class="team-photo" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Tarjetas Misión, Visión, Valores -->
+      <div class="mvv-grid">
+        <div class="mvv-card">
+          <div class="mvv-icon-container">
+            <img src="content/mission.png" alt="Misión" class="mvv-icon" />
+          </div>
+          <h4>Misión</h4>
+          <p>Ofrecer un transporte público eficiente, accesible y seguro para todos los ciudadanos de Pucallpa,
+            priorizando la comodidad y puntualidad.</p>
+        </div>
+
+        <div class="mvv-card">
+          <div class="mvv-icon-container">
+            <img src="content/vision.png" alt="Visión" class="mvv-icon" />
+          </div>
+          <h4>Visión</h4>
+          <p>Ser la empresa líder en transporte urbano de la región Ucayali, comprometida con la modernización constante
+            y el servicio de máxima calidad.</p>
+        </div>
+
+        <div class="mvv-card">
+          <div class="mvv-icon-container">
+            <img src="content/value.png" alt="Valores" class="mvv-icon" />
+          </div>
+          <h4>Valores</h4>
+          <p>Responsabilidad vial, máxima seguridad, respeto al usuario y un firme compromiso de servicio con cada
+            ciudadano de nuestra región.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Servicios Section -->
+  <section id="servicios" class="servicios">
+    <div class="servicios-container">
+      <h3 class="section-title">Nuestros <span>Servicios</span></h3>
+      <p class="section-subtitle">Ofrecemos soluciones integrales de movilidad diseñadas para la comodidad y la
+        seguridad diaria.</p>
+
+      <div class="servicios-grid">
+        <!-- Servicio 1 -->
+        <div class="serv-card">
+          <div class="serv-img-wrapper">
+            <img src="content/img1.jpg" alt="Servicio de Transporte Urbano" />
+          </div>
+          <div class="serv-info">
+            <h4>Transporte Urbano</h4>
+            <p>Cobertura integral dentro de Pucallpa y distritos aledaños con flotas modernas y frecuencias constantes
+              de salida.</p>
+            <ul class="serv-list">
+              <li><i class="fa-solid fa-circle-check"></i> Rutas Definidas</li>
+              <li><i class="fa-solid fa-circle-check"></i> Horarios Frecuentes</li>
+            </ul>
+            <a href="#rutas" class="btn btn-card">Ver Mapa de Rutas</a>
+          </div>
+        </div>
+
+        <!-- Servicio 2 -->
+        <div class="serv-card">
+          <div class="serv-img-wrapper">
+            <img src="content/img2.jpg" alt="Servicio de Transporte Interurbano" />
+          </div>
+          <div class="serv-info">
+            <h4>Transporte Interurbano</h4>
+            <p>Rutas troncales seguras que conectan fluidamente Yarinacocha, Callería, Manantay y el distrito de Campo
+              Verde.</p>
+            <ul class="serv-list">
+              <li><i class="fa-solid fa-circle-check"></i> Unidades Confortables</li>
+              <li><i class="fa-solid fa-circle-check"></i> Salidas Programadas</li>
+            </ul>
+            <a href="#rutas" class="btn btn-card">Itinerario de Rutas</a>
+          </div>
+        </div>
+
+        <!-- Servicio 3 -->
+        <div class="serv-card">
+          <div class="serv-img-wrapper">
+            <img src="content/img4.jpg" alt="Centro de Seguridad y Control" />
+          </div>
+          <div class="serv-info">
+            <h4>Seguridad y Control</h4>
+            <p>Monitoreo constante de velocidad, cumplimiento de rutas y asistencia mediante tecnología de vanguardia y
+              control presencial.</p>
+            <ul class="serv-list">
+              <li><i class="fa-solid fa-circle-check"></i> Monitoreo GPS</li>
+              <li><i class="fa-solid fa-circle-check"></i> Asistencia en el Camino</li>
+            </ul>
+            <a href="#contacto" class="btn btn-card">Conoce Más</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Galería Section -->
+  <section id="galeria" class="galeria">
+    <div class="galeria-container">
+      <h3 class="section-title">Nuestras <span>Galerías</span></h3>
+      <p class="section-subtitle">Momentos especiales compartidos con nuestro equipo y la comunidad de Pucallpa.</p>
+
+      <div class="galeria-action-row">
+        <button id="back-to-albums" class="btn btn-outline btn-back" style="display: none;">
+          <i class="fa-solid fa-arrow-left"></i> Volver a Álbumes
+        </button>
+      </div>
+
+      <!-- Mensaje de carga -->
+      <div id="gallery-loading" class="gallery-loading-wrapper">
+        <i class="fa-solid fa-circle-notch fa-spin"></i>
+        <p>Cargando galerías desde el servidor...</p>
+      </div>
+
+      <!-- Carrusel de Álbumes -->
+      <div id="album-carousel" class="album-carousel" style="display: none;">
+        <!-- Se llenará dinámicamente con JS -->
+      </div>
+
+      <!-- Contenedor de Fotos (Grid Asimétrico dinámico) -->
+      <div id="photo-container" class="photo-container" style="display: none;">
+        <h4 id="current-album-title" class="album-view-title"></h4>
+        <div id="photo-grid" class="galeria-grid">
+          <!-- Se llenará dinámicamente con JS y clases CSS asimétricas -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox Modal -->
+  <div id="lightbox" class="lightbox">
+    <span class="close-lightbox" id="closeLightboxBtn">&times;</span>
+    <div class="lightbox-wrapper">
+      <img class="lightbox-content" id="lightbox-img" alt="Vista ampliada" style="display: none;" />
+      <video class="lightbox-content" id="lightbox-video" controls style="display: none;"></video>
+      <div id="caption"></div>
+    </div>
+  </div>
+
+  <!-- Nuestras Rutas Section (Nueva con Iframe) -->
+  <section id="rutas" class="rutas">
+    <div class="rutas-container">
+      <h3 class="section-title">Nuestras <span>Rutas</span></h3>
+      <p class="section-subtitle">Explora en tiempo real las rutas viales autorizadas y planifica tu viaje por la ciudad
+        de Pucallpa.</p>
+
+      <div class="map-wrapper">
+        <!-- Iframe del mapa: Inicialmente con un Google Maps real de Pucallpa interactivo de respaldo. 
+             El usuario puede reemplazar fácilmente el src por su componente dedicado de GpsCentral. 
+            
+                    
+
+                <iframe src="https://transportesanjuan.centralafbv.com/embed/map/transportesanjuan" width="100%" height="600"
+          frameborder="0" style="border: 0; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08);"
+          allow="geolocation">
+        </iframe>
+          -->
+        <iframe id="mapa-iframe"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126442.27438491823!2d-74.63914849646549!3d-8.381335198083815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91a0c0a37db7bb1d%3A0xe54d9b62fb91e0a2!2sPucallpa!5e0!3m2!1ses!2spe!4v1685600000000!5m2!1ses!2spe"
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          title="Mapa de Rutas - Transportes San Juan">
+        </iframe>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contáctanos Section -->
+  <section id="contacto" class="contacto">
+    <div class="contacto-container">
+
+      <div class="contacto-grid">
+        <!-- Columna de Información -->
+        <div class="contacto-info">
+          <h3>Contáctanos</h3>
+          <p class="contacto-intro">Estamos aquí para escucharte y ayudarte. Si tienes alguna duda, reclamo o
+            sugerencia, no dudes en escribirnos.</p>
+
+          <ul class="contacto-details">
+            <li>
+              <div class="contacto-icon-box">
+                <i class="fa-solid fa-map-location-dot"></i>
+              </div>
+              <div class="contacto-text-box">
+                <strong>Nuestra Oficina Principal</strong>
+                <span>Jr. Mariano Melgar 128 – Yarinacocha, Pucallpa</span>
+              </div>
+            </li>
+            <li>
+              <div class="contacto-icon-box">
+                <i class="fa-solid fa-phone-volume"></i>
+              </div>
+              <div class="contacto-text-box">
+                <strong>Teléfono de Atención</strong>
+                <span>961-961-660</span>
+              </div>
+            </li>
+            <li>
+              <div class="contacto-icon-box">
+                <i class="fa-solid fa-envelope-open-text"></i>
+              </div>
+              <div class="contacto-text-box">
+                <strong>Correo Electrónico</strong>
+                <span>landing.tjs@gmail.com</span>
+              </div>
+            </li>
+          </ul>
+
+          <!-- Mapa decorativo de la Región (SVG Estético) -->
+          <div class="contacto-map-vector">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+              <path d="M50 100 C 80 50, 150 150, 200 80 C 250 20, 300 130, 350 90" fill="none"
+                stroke="rgba(255,255,255,0.08)" stroke-width="8" stroke-linecap="round" />
+              <path d="M70 120 C 110 80, 130 180, 180 110 C 230 40, 280 160, 330 120" fill="none"
+                stroke="rgba(255,255,255,0.05)" stroke-width="6" stroke-linecap="round" />
+              <circle cx="200" cy="80" r="6" fill="#FFD700" />
+              <circle cx="350" cy="90" r="4" fill="rgba(255,255,255,0.4)" />
+              <circle cx="50" cy="100" r="4" fill="rgba(255,255,255,0.4)" />
+              <text x="210" y="85" fill="#ffffff" font-size="10" font-family="Montserrat" font-weight="600"
+                opacity="0.8">Pucallpa (Base)</text>
+            </svg>
+          </div>
+        </div>
+
+        <!-- Tarjeta del Formulario Flotante -->
+        <div class="contacto-form-card">
+          <h4>Envíanos un Mensaje</h4>
+          <form id="contactForm" class="contact-form">
+            <div class="form-group">
+              <label for="fullName">Nombre Completo</label>
+              <input type="text" id="fullName" placeholder="Ej. Juan Pérez" required />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Correo Electrónico</label>
+              <input type="email" id="email" placeholder="juan@gmail.com" required />
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Asunto</label>
+              <select id="subject" required>
+                <option value="" disabled selected>Selecciona un asunto...</option>
+                <option value="consulta">Consulta General</option>
+                <option value="sugerencia">Sugerencias y Felicitaciones</option>
+                <option value="reclamo">Reclamos y Reportes</option>
+                <option value="trabajo">Trabaja con Nosotros</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Mensaje</label>
+              <textarea id="message" placeholder="¿En qué podemos ayudarte?" rows="4" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-submit" id="btnSubmitForm">
+              <span class="btn-text">ENVIAR MENSAJE</span>
+              <span class="btn-spinner" style="display: none;"><i class="fa-solid fa-spinner fa-spin"></i>
+                Enviando...</span>
+            </button>
+            <div id="formFeedback" class="form-feedback"></div>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer Premium -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-grid">
+
+        <!-- Columna 1: Info e Identidad -->
+        <div class="footer-col col-info">
+          <div class="footer-logo">
+            <img src="content/LogoSinFondo.png" alt="Logo" class="footer-logo-img" />
+            <span class="footer-logo-text">SAN JUAN</span>
+          </div>
+          <p class="footer-desc">
+            30 años ofreciendo un transporte público seguro, responsable y de alta calidad para la región de Ucayali y
+            Pucallpa.
+          </p>
+          <div class="footer-socials">
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <!-- Columna 2: Enlaces Rápidos -->
+        <div class="footer-col">
+          <h5>Explorar</h5>
+          <ul class="footer-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#galeria">Galería</a></li>
+          </ul>
+        </div>
+
+        <!-- Columna 3: Servicios -->
+        <div class="footer-col">
+          <h5>Servicios</h5>
+          <ul class="footer-links">
+            <li><a href="#servicios">Transporte Urbano</a></li>
+            <li><a href="#servicios">Transporte Interurbano</a></li>
+            <li><a href="#servicios">Seguridad y Control</a></li>
+            <li><a href="#rutas">Mapa de Rutas</a></li>
+          </ul>
+        </div>
+
+        <!-- Columna 4: Legales -->
+        <div class="footer-col">
+          <h5>Legales</h5>
+          <ul class="footer-links">
+            <li><a href="#">Política de Privacidad</a></li>
+            <li><a href="#">Términos y Condiciones</a></li>
+            <li><a href="#"><i class="fa-solid fa-book-open"></i> Libro de Reclamaciones</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Transportes San Juan S.R.L. | Todos los derechos reservados.</p>
+        <p class="footer-subtext">Jr. Mariano Melgar 128 - Yarinacocha, Pucallpa, Ucayali</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Barra de Navegación Inferior Móvil (Mobile Tab Bar) -->
+  <nav class="mobile-tab-bar">
+    <a href="#inicio" class="tab-item active">
+      <div class="tab-icon-wrapper">
+        <i class="fa-solid fa-house"></i>
+      </div>
+      <span>Inicio</span>
+    </a>
+    <a href="#nosotros" class="tab-item">
+      <div class="tab-icon-wrapper">
+        <i class="fa-solid fa-circle-info"></i>
+      </div>
+      <span>Nosotros</span>
+    </a>
+    <a href="#servicios" class="tab-item">
+      <div class="tab-icon-wrapper">
+        <i class="fa-solid fa-bus"></i>
+      </div>
+      <span>Servicios</span>
+    </a>
+    <a href="#contacto" class="tab-item">
+      <div class="tab-icon-wrapper">
+        <i class="fa-solid fa-user-tie"></i>
+      </div>
+      <span>Contacto</span>
+    </a>
+  </nav>
+
+  <script type="module" src="script.js"></script>
+</body>
+
+</html>
