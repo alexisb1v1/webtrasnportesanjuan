@@ -1,14 +1,8 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js";
 import { getStorage, ref, listAll, getDownloadURL, getMetadata } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-storage.js";
 
-// Configuración de Firebase - Oficial del Proyecto
-const firebaseConfig = {
-  apiKey: "AIzaSyCVAk8zHCEcT00PiNPsGpCDPOhHA-5kFog",
-  storageBucket: "transportesanjuan-263fb.firebasestorage.app",
-};
-
-// Inicializar Firebase
-const app = initializeApp(firebaseConfig);
+// Inicializar Firebase (usando la configuración global)
+const app = initializeApp(window.firebaseConfig);
 const storage = getStorage(app);
 
 document.addEventListener('DOMContentLoaded', () => {
